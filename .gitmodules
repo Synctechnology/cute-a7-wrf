@@ -1,0 +1,3 @@
+[submodule "ipcores/ipbus-firmware"]
+	path = ipcores/ipbus-firmware
+	url = https://github.com/ipbus/ipbus-firmware

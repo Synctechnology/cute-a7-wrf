@@ -1,0 +1,31 @@
+CUTE-WR-A7 V1.2 HW PIN
+
+    HW Product         - HW PCB           - SDC          - TOP Signal Name    -  Function
+1.  Frontend AUX0      - SYNC_DATA0       - B9/A9        - SYNC_CLK_10M_O_P/N -  10M Sync Clock Output
+2.  Frontend AUX1      - SYNC_DATA1       - D8/C8        - PPS_O_P/N          -  PPS Output
+3.  Status 0 GREEN     - LED_0            - H14          - LED_GREEN_O[0]     -  Port 0 Link&Sync
+4.  Status 0 RED       - LED_1            - G14          - LED_RED_O[0]       -  Port 0 Activity
+5.  Status 1 GREEN     - LED_2            - H17          - LED_GREEN_O[1]     -  Port 1 Link&Sync
+6.  Status 1 RED       - LED_3            - E18          - LED_RED_O[1]       -  Port 1 Activity
+7.  EXT_RX             - EXT_RX           - R16          - UART_RX_I          -  UART RX
+8.  EXT_TX             - EXT_TX           - R17          - UART_TX_O          -  UART TX
+9.  RESET              - EXT_RESV_I       - K15          - RESET_N            -  RESET Signal, low valid
+10. LOCK               - EXT_RESV_O       - B17          - LOCK               -  LOCK Signal, high valid
+11. FMC WRN_PLL_Clock  - GBTCLK0_M2C_P(N) - AD9516 OUT9  -                    -  125MHz PLL Output
+12. FMC TOD_IN         - LA17_CC_P        - P4           - GM_FMC_TOD_IN      -  TOD IN
+13. FMC PPS_IN         - LA17_CC_N        - P3           - GM_FMC_PPS_IN      -  PPS IN
+14. FMC TOD_TERM_EN    - LA12_P           - B16          - GM_FMC_TOD_TERM_EN -  TOD TERM EN
+15. FMC TOD_OUT        - LA23_P           - V8           - GM_FMC_TOD_OUT     -  TOD OUT
+16. FMC PPS_TERM_EN    - LA26_N           - L2           - GM_FMC_PPS_TERM_EN -  PPS TERM EN
+17. FMC GM_PLL_RESET   - LA28_N           - V6           - GM_FMC_EXT_PLL_RESET     - PLL RESET
+18. FMC GM_PLL_CS      - LA30_P           - R3           - GM_FMC_EXT_PLL_CS        - PLL_CS
+19. FMC GM_PLL_SCLK    - LA30_N           - T2           - GM_FMC_EXT_PLL_SCLK      - PLL_SCLK
+20. FMC GM_PLL_SDI     - LA31_P           - U4           - GM_FMC_EXT_PLL_SDI       - PLL_SDI
+21. FMC GM_PLL_SDO     - LA31_N           - V4           - GM_FMC_EXT_PLL_SDO       - PLL_SDO
+22. FMC GM_PLL_REFSEL  - LA32_P           - L4           - GM_FMC_EXT_PLL_REFSEL    - PLL_REFSEL
+23. FMC GM_PLL_LOCK    - LA32_N           - L3           - GM_FMC_EXT_PLL_LOCK      - PLL_LOCK
+24. FMC GM_PLL_SYNC    - LA33_P           - R2           - GM_FMC_EXT_PLL_SYNC      - PLL_SYNC
+25. FMC GM_PLL_STAT    - LA33_N           - R1           - GM_FMC_EXT_PLL_STAT      - PLL_STAT
+26. FMC PLL_OUT6_P/N   - CLK0_M2C_P/N     - D13/C13      - GM_FMC_EXT_PLL_OUT6_P/N  - 62.5M IN
+27. FMC EXT_CLK_IN_P/N - CLK1_M2C_P/N     - E13/D14      - GM_FMC_EXT_CLK_IN_P/N    - 10M In
+27. FMC SYS_CLK_OUT_P/N- LA18_CC_P/N      - E16/D16      - GM_SYS_CLK_OUT_P/N       - 62.5M OUT
