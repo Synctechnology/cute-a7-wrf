@@ -1,3 +1,56 @@
+
+Compact Universal Timing Endpoint Based on White Rabbit with Xilinx Artix7
+
+The Cute-WR series are standalone White Rabbit Node implementations on FPGA Mezzanine Card form factor. The idea is to have a compact, low-cost and common WR NIC for synchronous DAQ front-ends and other applications!
+Cute-WR shows the feasibility of the idea; while the Cute-WR-DP expands the Cute-WR to two SFP ports that can support various operation modes.
+The Cute-WR-A7 is the enhanced version of the CUTE-WR-DP with an Xilinx Artix7 series FPGA. It inherits similar interfaces from Cute-WR-DP: two SFP ports, two SMA/LEMO connectors, FMC form factor with LPC connector, etc.
+The three operation modes of Cute-WR-DP are also supported by Cute-WR-A7:
+
+
+Normal mode (Cute-WR-A7-NM)
+
+In Normal mode, Cute-WR-A7 acts as a normal WR node with one SFP
+port (SFP0).
+
+
+
+Cascade mode (Cute-WR-A7-CM)
+
+In CM mode, two ports act as one down-link (SFP1) and one
+up-link (SFP0) to support cascade topology. Two ports also
+support a simple switch function for normal Ethernet packets.
+
+
+
+Parallel mode (Cute-WR-A7-PM)
+
+In PM mode both ports act as down-link port connect to different
+WRS, provide redundancy to improve the reliability for safety
+related applications. The current firmware doesn't support this
+function.
+
+More information: https://ohwr.org/project/cute-wr-a7/wikis/home
+
+Hardware Features:
+
+XC7A35T-2CSG325I (XC7A50T-2CSG325I compatible)
+Two SFP sockets that support WR
+128Mb QSPI FLASH (N25Q128A13ESE40F)
+512Kb I2C EEPROM (24FC512-I/SM)
+UART port (TTL level with 3-state buffer)
+VITA57 FMC mezzanine with LPC connector
+Ruggedized conduction cooled form factor
+AD9516 for the main PLL
+Mounting options for various VCXOs
+Two delay adjustable output channels (11ps increments, 6ns range)
+1-Wire Temperature sensor
+Current sensor
+2 LEMO/SMA for the delay adjustable output
+4 front panel LEDs or two bi-color LEDs
+3.3v power supply, 2.5A
+
+
+
 CUTE-WR-A7 V1.2 HW PIN
 
     HW Product         - HW PCB           - SDC          - TOP Signal Name    -  Function
